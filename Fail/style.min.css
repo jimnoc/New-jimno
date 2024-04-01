@@ -1,0 +1,10 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 1.8;
+    color: #999;
+    background-color: #c1bbb2;
+    height: 100%;
+    margin: 0;
+}
