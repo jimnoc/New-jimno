@@ -1,16 +1,25 @@
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;
+}
+
 body, html {
   height: 100%;
-  color: #5e5c5c;
+  color: #6e716f;
   line-height: 2.0;
 }
+
+ span {
+    font: size 500px;
+    font-weight:bold;
+    color: #FFFFFF;
+    text-shadow: 1px 2px 0 #888888, 3px 7px 5px #777777;
+
+    }
+  
 h2 {
    text-align: center;
 }
- div {
-  text-shadow: 0 0 3px #FF0000
-}
+
  
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -34,7 +43,7 @@ h2 {
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("images/Moon, Tree, Sky_big.jpg");
+  background-image: url("images/Valley from Rothenberg_big.jpg");
   min-height: 400px;
 }
 
@@ -48,3 +57,12 @@ h2 {
     min-height: 400px;
   }
 }
+
+tester {
+  color: transparent;
+  background: #555555;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 3px 3px rgba(255,255,255,0.7);
+  }
