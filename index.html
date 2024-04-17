@@ -14,51 +14,57 @@
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top";>
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-none w3-hide-large w3-center" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
+
+<div class="container">  <div class="child"></div>
+<div class="w3-top">
+        <div class="row">
+            <div class="column">
+
+ <li><a href="#home">Home</a></li></div>
+            <div class="column">
+
+  <li><a href="photos.html">Photos</a></li>
+  <li><a href="graphics.html">Graphics</a></li></div>
+
+            <div class="column">
+ <li><a href="#about">Bio</a></li>
+  <li><a href="#contact">Contact</a></li></div></div>
+</ul>
+
+</div></div></div></div></div>
+</a>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">BIO</a>
+    <a href="Photos.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTOS</a>
+    <a href="graphics.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GRAPHICS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="opacity: none;">
-    <span class="w3-center w3-padding-large w3-xxxlarge w3-wide w3-animate-opacity"><span class="w3-hide-xlarge">jimno_imagery</span>
+<div class="bgimg-1 w3-display-container w3-opacity-none" id="home">
+  <div class="w3-display-middle" style="opacity: none">
+        <img src="images/jimno_header_white.png" alt="jimno imagery" class="responsive">
   </div>
 </div>
 
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love design</em></p>
-  <p>This is my page where you can see the different types of visuals I have created.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-     <br>
-      <img src="images/jims-facets.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of jim" width="500" height="333">
+<div class="w3-content w3-padding-10" id="about">
+
+  <p>Hi, I'm jim. This is my page where you can see the different types of visuals I have created.</p>
+    <div class="responsive">
+      <img src="images/jims facets.png" alt="Photo of jim" id="about" class="Change">
     </div>
+    <p>I have years of experience in many different facets of imaging.</p>
+    <p>Black and white newspaper ads, being the on-call photographer for The Postal Regulatory Commission,<br>
+    Creating and maintaining the Email blast campaigns for Recorded Books, User interfaces for training ... I have done a lot!</p>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I hope you spend some time looking around. Drop me a line!</p>
     </div>
   </div>
 <br><br><br>
@@ -111,7 +117,6 @@
     <div class="w3-col m3">
       <img src="images/Small man in huge window.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Man behind huge window">
     </div>
-    <button class="w3-button w3-padding-large w3-light-green" style="margin-top:64px">LOAD MORE</button>
   </div>
 </div>
 
@@ -132,24 +137,23 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
+<div class="w3-content w3-container w3-padding-40" id="contact">
+  <h3 class="w3-center">Contact jim</h3>
+  <p class="w3-center"><em>I feed off of feedback!</em></p>
+  <a href= "resume.html"><button class="w3-button w3-padding-small w3-dark-green" style="margin-top:20px">Résumé</button></a>
+  <div class="w3-row w3-padding-20 w3-section">
     <div class="w3-col m4 w3-container">
-      <img src="images/jimno_header.png" img size= width 500px class="w3-image w3-round">
     </div>
-    <div class="w3-col m8 w3-panel">
+    <div class="w3-col m0 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Washington, DC, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 240-419-4149<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jim@jimno.net<br>
+        <i class="fa-fw w3-hover-text-black w3-large w3-margin-center"></i> Washington, DC, US<br>
+        <i class="fa-fw w3-hover-text-black w3-large w3-margin-center"></i> Phone: 240-419-4149<br>
+        <i class="fa-fw w3-hover-text-black w3-large w3-margin-center"></i> Email: jim@jimno.net<br>
       </div>
       <form
       action="https://formspree.io/f/xqkrbgzv"
       method="POST" target="mailto:jim@jimnno.net">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-row-padding w3-center" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
           </div>
@@ -159,8 +163,7 @@
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
         <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
+          <i class=""></i> MESSAGE JIM</button>
       </form>
     </div>
   </div>

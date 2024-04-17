@@ -1,26 +1,33 @@
+@media screen and (max-width: 44em) {
+
+}
+
 
 h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;
 }
 
 body, html {
   height: 100%;
-  color: #6e716f;
-  line-height: 2.0;
+  color: #ffffff;
+  line-height: 3.0;
+  font-size: large;
 }
 
  span {
     font: size 500px;
     font-weight:bold;
     color: #FFFFFF;
-    text-shadow: 1px 2px 0 #888888, 3px 7px 5px #777777;
+    text-shadow: 1px 2px 0 #888888, 3px 7px 5px #ffffff;
 
     }
   
 h2 {
    text-align: center;
 }
+div.w3-bar {
+  text-align: center;
+}
 
- 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -58,11 +65,163 @@ h2 {
   }
 }
 
-tester {
-  color: transparent;
-  background: #555555;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  text-shadow: 2px 3px 3px rgba(255,255,255,0.7);
+/* menu as columns */
+.container {
+
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding-left: 80;
+  text-align: center;
+}
+.center {
+  width: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+
+  width: 25%;
+  padding: 20px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
   }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+  @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,600");
+
+body {
+  display: inline;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #082f5f;
+}
+#change {
+    max-width: 100%;
+    height: auto;
+  }
+
+ul {
+  display: auto;
+  flex-direction: inline;
+  align-items: auto;
+  list-style-type: none;
+}
+
+  li {
+    display: inline;
+    padding: 10px auto;
+    margin: auto;
+  }
+
+    a {
+      --fill-color: #bac83e;
+      position: top;
+      display: block;
+      padding: 4px 0;
+      font: 700 3rem Raleway, sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-text-stroke: 2px var(--fill-color);
+      background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+      color: transparent;
+      background-clip: text;
+      transition: 0.40s linear;
+
+      &:hover {
+        background-size: 100%;
+      }
+    }
+
+    .responsive {
+      max-width: 100%;
+      height: auto;
+      min-width: 400px;
+    }
+
+    .Change {
+      width: 40%;
+      height: auto;
+    }
+    .container {
+      margin: auto;
+      max-width: 100%;
+      height: 0px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .child {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      position: absolute;
+    }
+
+/* photos styles */
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: right;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-left: 20;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
